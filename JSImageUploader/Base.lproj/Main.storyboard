@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xi2-yl-EgI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Jt1-Us-OR6">
+            <objects>
+                <navigationController id="Xi2-yl-EgI" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="psS-3H-9iQ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="NXc-as-nzw" kind="relationship" relationship="rootViewController" id="TLu-KR-Why"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RqO-Wt-LQ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-594" y="-116"/>
+        </scene>
+        <!--Test Upload-->
+        <scene sceneID="eJi-5t-X4j">
+            <objects>
+                <viewController id="NXc-as-nzw" customClass="ViewController" customModule="JSImageUploader" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Test Upload" id="Wek-JM-9Tg">
+                        <barButtonItem key="rightBarButtonItem" title="Upload" id="bPb-DF-uk5">
+                            <connections>
+                                <action selector="uploadAction:" destination="NXc-as-nzw" id="p2M-yA-Zcs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UEg-8E-rQE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="182" y="-116"/>
+        </scene>
+    </scenes>
+</document>
